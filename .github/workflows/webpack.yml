@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: NodeJS with Express
 
 on:
   push:
@@ -24,4 +24,6 @@ jobs:
 
     - name: Build
       run: |
+        npm i express
+        npm i body-parser
         npm start
